@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/anamnese.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <title>Anamneses</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo" onclick="window.location.href='home.html'">
+        <img src="assets/images/logo.png" class="img-logo" alt="" />
+        <h2>Vida Leve</h2>
+      </div>
+
+      <div class="menu-btn">
+        <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+      </div>
+
+      <ul>
+        <li><a href="home.html"> Home </a></li>
+        <li><a href="pacientes.html"> Pacientes </a></li>
+        <li> <a href="index.html"> Sair </a> </li>
+      </ul>
+    </nav>
+
+
+    <section>
+        <h2>Areas Anamnese</h2>
+        <div class="areas">
+            <div class="card" onclick="window.location.href='geral.html'">
+                <img src="assets/images/enfermeira.png" class="logo-img">    
+                <div class="card-text">
+                    <h3>Geral</h3>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href='psicologia.html'">
+                <img src="assets/images/cerebro.png" class="logo-img">
+                <div class="card-text">
+                    <h3>Psicologia</h3>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href='educacaofisica.html'">
+                <img src="assets/images/educacaofisica.png" class="logo-img">
+                <div class="card-text">
+                    <h3>Educação Fisica</h3>
+                </div>
+            </div>
+
+            <div class="card" onclick="window.location.href='farmacia.html'">
+                <img src="assets/images/farmacia.png" class="logo-img">    
+                <div class="card-text">
+                    <h3>Farmácia</h3>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href='nutricao.html'">
+                <img src="assets/images/nutricao.png" class="logo-img">    
+                <div class="card-text">
+                    <h3>Nutrição</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

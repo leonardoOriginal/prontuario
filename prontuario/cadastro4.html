@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>Prontuario</title>
+</head>
+<body>
+
+
+
+    <div class="container">
+
+        <nav>
+            <div class="logo" onclick="window.location.href='home.html'">
+            <img src="assets/images/logo.png" class = "img-logo" alt="">
+            <h2>Vida Leve </h2>
+
+            </div>
+    
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+    
+            <ul>
+                <li> <a href="home.html"> Home </a> </li>
+                <li> <a href="pacientes.html"> Pacientes </a> </li>
+                <li> <a href="index.html"> Sair </a> </li>
+            </ul>
+        </nav>
+    
+        <script src="assets/js/main.js"></script>
+        
+        <a href="cadastro3.html"><div id="seta"></div></a>
+        <div class="header">
+        </div>
+
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="dificuldade">Normalmente qual a sua dificuldade para abaixar-se, ajoelhar-se ou curvar-se ?</label>
+                <input type="text" id="dificuldade" placeholder="Insira a resposta aqui">
+            </div>
+            <div class="radio-control">
+                <label for="" style="margin-bottom: 15px;">Nesse último mês, você teve dores no peito quando não estava fazendo atividade física ?</label><br>
+                <input type="radio" id="dor-peito-sim" name="fav_language" value="dor-peito-sim">
+                <label for="dor-peito-sim">Sim</label><br>
+                <input type="radio" id="dor-peito-nao" name="fav_language" value="dor-peito-nao">
+                <label for="dor-peito-nao">Não</label>
+            </div>
+            <div class="radio-control">
+                <label for="" style="margin-bottom: 15px;">Voce sente dor no peito quando faz atividades fisicas ?</label><br>
+                <input type="radio" id="dor-peito-sim-daf" name="fav_language" value="dor-peito-sim-daf">
+                <label for="dor-peito-sim-daf">Sim</label><br>
+                <input type="radio" id="dor-peito-nao-daf" name="fav_language" value="dor-peito-nao-daf">
+                <label for="dor-peito-nao-daf">Não</label>
+            </div>
+            <div class="form-control">
+                <label for="musculoesquelético">Você tem algum problema musculoesquelético ? Qual ?</label>
+                <input type="text" id="musculoesquelético" placeholder="Insira a resposta aqui">
+            </div>
+            <div class="form-control">
+                <label for="osseo">Você tem algum problema ósseo ou articular (por exemplo: costas, joelho ou quadril) que possa piorar com a prática de atividades físicas ?</label>
+                <input type="text" id="osseo" placeholder="Insira a resposta aqui">
+            </div>
+            <div class="form-control">
+                <label for="contraindicacao">Você tem conhecimento de alguma outra razão que contraindique a prática de atividade física ?</label>
+                <input type="text" id="contraindicacao" placeholder="Insira a resposta aqui">
+            </div>
+            <div class="radio-control">
+                <label for="" style="margin-bottom: 15px;">Você perdeu equilíbrio em virtude de tonturas ou perdeu a consciência quando estava praticando atividade física ?</label><br>
+                <input type="radio" id="equilibrio-sim" name="fav_language" value="equilibrio-sim">
+                <label for="equilibrio-sim">Sim</label><br>
+                <input type="radio" id="equilibrio-nao" name="fav_language" value="equilibrio-nao">
+                <label for="equilibrio-nao">Não</label>
+            </div>
+
+            
+
+        </form>
+
+        <div class="botao">
+            <button onclick="window.location.href = 'paciente2.html'">Enviar</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

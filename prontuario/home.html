@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>Prontuario</title>
+</head>
+<body>
+
+    <nav>
+            <div class="logo" onclick="window.location.href='home.html'">
+            <img src="assets/images/logo.png" class = "img-logo" alt="">
+            <h2>Vida Leve </h2>
+
+            </div>
+    
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+    
+            <ul>
+                <li> <a href="home.html"> Home </a> </li>
+                <li> <a href="pacientes.html"> Pacientes </a> </li>
+                <li> <a href="index.html"> Sair </a> </li>
+            </ul>
+    </nav>
+
+    <div class="titulo">
+        <h2>Agenda:</h2>
+    </div>
+    <div class="container">
+        <div class="cards">
+            <div id ="card1" class="cartao">
+                <h2>Mohamed da Silva Machado Quarto</h2>
+                <p>Paciente com obesidade identificada - Consulta distante</p>
+            </div>
+            <div id ="card2" class="cartao">
+                <h2>Mohamed da Silva Machado Quarto</h2>
+                <p>Paciente com obesidade identificada - Consulta distante</p>
+            </div>
+            <div id ="card3" class="cartao">
+                <h2>Mohamed da Silva Machado Quarto</h2>
+                <p>Paciente com obesidade identificada - Consulta distante</p>
+            </div>
+            <div id ="card4" class="cartao">
+                <h2>Mohamed da Silva Machado Quarto</h2>
+                <p>Paciente com obesidade identificada - Consulta distante</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="botao">
+        <button id="btn-calendario"><a href="calendario.html">Calendario</a></button>
+    </div>
+
+    <div style="border-top: 3px solid #00A896; margin-top: 28px;"> </div>
+
+    <div class="titulo">
+        <h2>Pacientes Recentes:</h2>
+    </div>
+    
+    <div class="imagens">
+        <div class="paciente">
+            <img src="assets/images/pessoa1.jpg" class="img-paciente" alt="Foto do paciente">
+            <div class="info-paciente">
+                <p>Natália Oliveira - 24 anos<br>1,65m - 90kgs</br></p>
+            </div>
+        </div>
+        <div class="paciente">
+            <img src="assets/images/pessoa1.jpg" class="img-paciente" alt="Foto do paciente">
+            <div class="info-paciente">
+                <p>Natália Oliveira - 24 anos<br>1,65m - 90kgs</br></p>
+            </div>
+        </div>
+        <div class="paciente">
+            <img src="assets/images/pessoa1.jpg" class="img-paciente" alt="Foto do paciente">
+            <div class="info-paciente">
+                <p>Natália Oliveira - 24 anos<br>1,65m - 90kgs</br></p>
+            </div>
+        </div>
+        <div class="paciente">
+            <img src="assets/images/pessoa1.jpg" class="img-paciente" alt="Foto do paciente">
+            <div class="info-paciente">
+                <p>Natália Oliveira - 24 anos<br>1,65m - 90kgs</br></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="botao">
+        <button id="btn-paciente"><a href="pacientes.html">Pacientes</a></button>
+    </div>
+    
+        <script src="assets/js/main.js"></script>
+</body>
+</html>

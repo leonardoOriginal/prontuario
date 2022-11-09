@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>Prontuario</title>
+</head>
+<body>
+
+
+
+    <div class="container">
+
+        <nav>
+            <div class="logo" onclick="window.location.href='home.html'">
+            <img src="assets/images/logo.png" class = "img-logo" alt="">
+            <h2>Vida Leve </h2>
+
+            </div>
+    
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+    
+            <ul>
+                <li> <a href="home.html"> Home </a> </li>
+                <li> <a href="pacientes.html"> Pacientes </a> </li>
+                <li> <a href="index.html"> Sair </a> </li>
+            </ul>
+        </nav>
+    
+        <script src="assets/js/main.js"></script>
+        
+        <a href="cadastro2.html"><div id="seta"></div></a>
+            
+        <div class="header">
+            <h2>Formulário de Anamnese Educação Física</h2>
+        </div>
+
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="nome-completo">Nome Completo</label>
+                <input type="text" id="nome-completo" placeholder="Insira o nome completo do paciente">
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Insira o email do paciente">
+            </div>
+            <div class="form-control">
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="text" id="nascimento" placeholder="Insira a data de nascimento">
+            </div>
+            <div class="form-control">
+                <label for="peso">Peso</label>
+                <input type="text" id="peso" placeholder="Insira o peso do paciente">
+            </div>
+            <div class="form-control">
+                <label for="altura">Altura</label>
+                <input type="text" id="altura" placeholder="Insira a altura do paciente">
+            </div>
+            <div class="form-control">
+                <label for="circ-cintura">Circunferência da cintura</label>
+                <input type="text" id="circ-cintura" placeholder="Insira a circunferência da cintura do paciente">
+            </div>
+            <div class="form-control">
+                <label for="circ-abdominal">Circunferência abdominal</label>
+                <input type="text" id="circ-abdominal" placeholder="Insira a circunferência abdominal do paciente">
+            </div>
+            <div class="radio-control">
+                <label for="" style="margin-bottom: 15px;">Qual seu nível de condicionamento ?</label><br>
+                <input type="radio" id="sedentario" name="fav_language" value="sedentario">
+                <label for="sedentario">Sedentário</label><br>
+                <input type="radio" id="x2-semana" name="fav_language" value="x2-semana">
+                <label for="x2-semana">Ativo 2x na semana</label><br>
+                <input type="radio" id="x3-semana" name="fav_language" value="x3-semana">
+                <label for="x3-semana">Ativo 3x na semana</label><br>
+                <input type="radio" id="todos-dias" name="fav_language" value="todos-dias">
+                <label for="todos-dias">Todos os dias</label><br>
+            </div>
+            <div class="radio-control">
+                <label for="" style="margin-bottom: 15px;">Qual seu nível de atividade fisíca ?</label><br>
+                <input type="radio" id="sedentario-af" name="fav_language" value="sedentario-af">
+                <label for="sedentario-af">Sedentário</label><br>
+                <input type="radio" id="iniciante-af" name="fav_language" value="iniciante-af">
+                <label for="iniciante-af">Iniciante (Menos de 3 meses)</label><br>
+                <input type="radio" id="intermediario-af" name="fav_language" value="intermediario-af">
+                <label for="intermediario-af">Intermediário (Mais de 3 meses)</label><br>
+                <input type="radio" id="avancado-af" name="fav_language" value="avancado-af">
+                <label for="avancado-af">Avançado (Mais de 1 ano)</label><br>
+            </div>
+            <div class="form-control">
+                <label for="praticou-af">Já praticou alguma atividade física no passado ? Quais por quanto tempo ?</label>
+                <input type="text" id="praticou-af" placeholder="Insira a resposta aqui">
+            </div>
+            <div class="form-control">
+                <label for="pratica-af">Pratica alguma atividade física atualmente ? Quais e a quanto tempo ?</label>
+                <input type="text" id="pratica-af" placeholder="Insira a resposta aqui">
+            </div>
+            <div class="form-control">
+                <label for="dificuldade-af">Normalmente qual a sua dificuldade para correr, levantar objetos pesados, praticar esportes ou realizar trabalhos pesados ?</label>
+                <input type="text" id="dificuldade-af" placeholder="Insira a resposta aqui">
+            </div>
+
+            
+
+        </form>
+
+        <div class="botao">
+            <button onclick="window.location.href = 'cadastro4.html'">Próximo</button>
+        </div>
+    </div>
+
+</body>
+</html>

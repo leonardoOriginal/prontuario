@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/consulta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>Nova Consulta</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <div class="logo" onclick="window.location.href='home.html'">
+                <img src="assets/images/logo.png" class = "img-logo" alt="">
+                <h2>Vida Leve </h2>
+                </div>
+                <div class="menu-btn">
+                    <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+                </div>
+                <ul>
+                    <li> <a href="home.html"> Home </a> </li>
+                    <li> <a href="pacientes.html"> Pacientes </a> </li>
+                    <li> <a href="index.html"> Sair </a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="quadrado">
+            <div class="qua">
+                <div class="datat">
+                    <div class="voltarq">
+                        <div class="voltaespa"></div>
+                        <a href="calendario.html"><div id="seta"></div></a>
+                    </div>
+                    <div class="datatt"> <h1> 31 de Outubro de 2022</h1> </div>
+                    <div class="datasepa"></div>
+                </div>
+                <div class="espa"></div>
+                <div class="cconsulta">
+                    <div class="paciente">
+                        <div class="fotoq">
+                            <div class="foto">
+                                <img src="assets/images/pessoa4.jpg" class = "img-paciente" alt="">
+                            </div>
+                        </div>
+                        <div class="nomeq">
+                            <div class="nome"> <h2> Mohamed da Silva Machado Quarto </h2> </div>
+                        </div>
+                        <div class="descq">
+                            <div class="desc"> 
+                                <h10> Idade: 24 anos </h10>
+                                <h10> Peso: 120kgs </h10>
+                                <h10> Altura: 1,79m </h10> 
+                                <h10> Última consulta: 21/10/2022 </h10> 
+                            </div>
+                        </div>
+                        <div class="seleq">
+                            <div class="sele">
+                                <div class="espsele"></div>
+                                <div class="search-container">
+                                    <label for="search-input" class="search-icon"> <h3> Encontre o paciente: </h3> </label>
+                                    <input type="text" class="search-input" id="search-input" required />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="espacinho"></div>
+                    <div class="horario">
+                        <div class="hdisponivelq">
+                            <div class="hdisponivel">
+                                <h10 style="color: red;"> 09:00hrs - Indisponível</h10>
+                                <h10 style="color: #00A896;"> 09:30hrs - Disponível </h10>
+                                <h10 style="color: #00A896;"> 10:00hrs - Disponível </h10> 
+                                <h10 style="color: red;"> 10:30hrs - Indisponível</h10>
+                                <h10 style="color: red;"> 11:00hrs - Indisponível </h10>
+                                <h10 style="color: red;"> 11:30hrs - Indisponível </h10>
+                                <h10 style="color: #00A896;"> 13:30hrs - Disponível </h10>
+                                <h10 style="color: #00A896;"> 14:00hrs - Disponível </h10>
+                                <h10 style="color: red;"> 14:30hrs - Indisponível </h10>
+                                <h10 style="color: red;"> 15:00hrs - Indisponível </h10>
+                                <h10 style="color: red;"> 15:30hrs - Indisponível </h10>
+                            </div>
+                        </div>
+                        <div class="selehq">
+                            <div class="seleh">
+                                <label for="horad"> <h3> Selecione o horário: </h3> </label>
+                                <select name="horad" id="horad">
+                                    <option value="horadd1">09:30hrs</option>
+                                    <option value="horadd2">10:00hrs</option>
+                                    <option value="horadd3">13:30hrs</option>
+                                    <option value="horadd4">14:00hrs</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="espacinho"></div>
+                    <div class="descricao">
+                        <div class="descri">
+                            <div class="desp"></div>
+                            <label for="dqsf"> <h2> Descrição do que será feito: </h2> </label>
+                            <input type="text" id="dqsf" name="dqsf">
+                        </div>
+                    </div>
+                </div>
+                <div class="finalizaq">
+                    <div class="espaf"></div>
+                    <div class="finalizaqq">
+                        <div class="fina">
+                            <button id="btn-finaliza"><a href="calendario.html">Finalizar</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

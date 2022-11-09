@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+}
+
+.metade{
+    background-color: #00A896;
+    width: 50vw;
+    min-height: 100vh;
+}
+
+.metade2{
+    background-color: #ffffff;
+    width: 50vw;
+    min-height: 100vh;
+}
+
+.inputs-txt{
+    font-family: 'Poppins'; 
+    font-style: normal; 
+    font-weight: 400; 
+    font-size: 1em; 
+    line-height: 140%; 
+    color: #1d1d1d; 
+    margin-left: 9%;
+}
+
+.botao-ler{
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 19px;
+    width: 14vw;
+    height: 6.2vh;
+    background: #FFFFFF;
+    border: 2px solid #05668D;
+    border-radius: 100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.85em;
+    line-height: 100%;
+    text-align: center;
+    color: #05668D;
+}
+
+.termos{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 26.5vh;
+}
+
+.botao-entrar{
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 19px;
+    width: 15vw;
+    height: 6vh;
+    background: #FFFFFF;
+    border: 2px solid #05668D;
+    border-radius: 100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 100%;
+    text-align: center;
+    color: #05668D;
+    margin-left: 36.9%;
+}
+
+.logohidden{
+    display: none;
+}
+
+@media (max-width: 850px){
+    .botao-ler{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+
+    #txt-entrar{
+        display: none;
+    }
+    
+    .metade{
+        display: none;
+    }
+
+    .metade2{
+        background-color: #00A896 ;
+        width: 100vw;
+    }
+
+    .botao-entrar{
+        height: 6vh;
+        width: 25vw;
+    }
+
+    .logohidden{
+        display: block;
+    }
+
+    .inputs-txt{
+        color: white;
+    }
+}

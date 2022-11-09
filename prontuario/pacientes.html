@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/search-box.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/pacientes.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Prontuario</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo" onclick="window.location.href='home.html'">
+          <img src="assets/images/logo.png" class="img-logo" alt="" />
+          <h2>Vida Leve</h2>
+        </div>
+
+        <div class="menu-btn">
+          <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <ul>
+          <li><a href="home.html"> Home </a></li>
+          <li><a href="pacientes.html"> Pacientes </a></li>
+          <li> <a href="index.html"> Sair </a> </li>
+        </ul>
+        </nav>
+
+        <script src="assets/js/main.js"></script>
+
+        <div class="titulo">
+            <a href="#"><div id="seta"></div></a>
+            <h2>Pacientes</h2>
+        </div>
+
+        <div class="pacientes-box">
+            <div class="pacientes-header">
+                <div class="search-container">
+                    <label for="search-input" class="search-icon"></label>
+                    <input type="text" class="search-input" id="search-input" required />
+                </div>
+                <div class="pacientes-btn">
+                    <button class="add-btn" onclick="window.location.href ='cadastro.html'">Novo Paciente</button>
+                </div>
+                <div class="pacientes-btn" id="hidden">
+                    <button class="add-btn" onclick="window.location.href = 'cadastro.html'">+</button>
+                </div>
+            </div>
+            <div class="pacientes-body">
+                <div class="pacientes-card" id="paciente1" onclick="window.location.href='paciente.html'">
+                    <div class="pacientes-img">
+                        <img src="assets/images/teste.png" alt="">
+                    </div>
+                    <div class="pacientes-info">
+                        <h4>Vera Almeida</h4>
+                    </div>
+                    <div class="pacientes-info2">
+                        <p>Idade: 35 anos</p>
+                        <p>Peso: 75kg</p>
+                        <p>Altura: 1,70m</p>
+                    </div>
+                </div>
+                <div class="pacientes-card" id="paciente1">
+                    <div class="pacientes-img">
+                        <img src="assets/images/teste.png" alt="">
+                    </div>
+                    <div class="pacientes-info">
+                        <h4>Vera Almeida</h4>
+                    </div>
+                    <div class="pacientes-info2">
+                        <p>Idade: 35 anos</p>
+                        <p>Peso: 75kg</p>
+                        <p>Altura: 1,70m</p>
+                    </div>
+                </div>
+                <div class="pacientes-card" id="paciente1">
+                    <div class="pacientes-img">
+                        <img src="assets/images/teste.png" alt="">
+                    </div>
+                    <div class="pacientes-info">
+                        <h4>Vera Almeida</h4>
+                    </div>
+                    <div class="pacientes-info2">
+                        <p>Idade: 35 anos</p>
+                        <p>Peso: 75kg</p>
+                        <p>Altura: 1,70m</p>
+                    </div>
+                </div>
+                <div class="pacientes-card" id="paciente1">
+                    <div class="pacientes-img">
+                        <img src="assets/images/teste.png" alt="">
+                    </div>
+                    <div class="pacientes-info">
+                        <h4>Vera Almeida</h4>
+                    </div>
+                    <div class="pacientes-info2">
+                        <p>Idade: 35 anos</p>
+                        <p>Peso: 75kg</p>
+                        <p>Altura: 1,70m</p>
+                    </div>
+                </div>
+                <div class="pacientes-card" id="paciente1">
+                    <div class="pacientes-img">
+                        <img src="assets/images/teste.png" alt="">
+                    </div>
+                    <div class="pacientes-info">
+                        <h4>Vera Almeida</h4>
+                    </div>
+                    <div class="pacientes-info2">
+                        <p>Idade: 35 anos</p>
+                        <p>Peso: 75kg</p>
+                        <p>Altura: 1,70m</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

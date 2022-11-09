@@ -1,0 +1,284 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+  /* background-color: blue; */
+  height: 8.8vh;
+  width: 100%;
+}
+
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: #00A896;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  flex-wrap: wrap;
+}
+
+nav .logo{
+  display: flex;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+nav .img-logo{
+  display: flex;
+  align-items: center;
+  width: 5rem;
+  padding: 0rem 1rem;
+}
+
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li{
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  background: #028090;
+}
+
+nav .menu-btn i{
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 920px) {
+  nav .menu-btn i{
+      display: block;
+  }
+  nav ul{
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background-color: #003840;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+  }
+  nav ul.open{
+      left: 0;
+  }
+  nav ul li{
+      width: 100%;
+      margin: 50px 0;
+  }
+  nav ul li a {
+      font-size: 23px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+      background: none;
+      color: #f88f06;
+  }   
+}
+
+.container{
+    /* background-color: blue; */
+    height: 100vh;
+    width: 100%;
+}
+
+.voltaespa{
+  /* background-color: red; */
+  height: 2.3vh;
+  width: 100%;
+}
+
+.voltarq{
+    /* background-color: aqua; */
+    height: 9vh;
+    width: 100%;
+}
+
+#seta {
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 15px;
+  padding: 5px;
+  box-shadow: 2px -2px 0 1px #00A896 inset;
+  border: solid transparent;
+  border-width: 0 0 2px 2px;
+  transform: rotate(45deg);
+  height: 3vh;
+  width: 2%;
+}
+
+
+
+
+.separa{
+    /* background-color: red; */
+    height: 10vh;
+    width: 100%;
+}
+
+.espa{
+    height: 10vh;
+    width: 5%;
+}
+
+.seta{
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 5px;
+    box-shadow: 2px -2px 0 1px #00A896 inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(45deg);
+}
+
+.datas{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.calendario{
+    /* background-color: aqua; */
+    height: 80vh;
+    width: 90%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Colors used */
+:root {
+  --teal-050: #effcf6;
+  --teal-100: #c6f7e2;
+  --teal-200: #8eedc7;
+  --teal-300: #65d6ad;
+  --teal-400: #3ebd93;
+  --teal-500: #27ab83;
+  --teal-600: #199473;
+  --teal-700: #147d64;
+  --teal-800: #0c6b58;
+  --teal-900: #014d40;
+
+  --blue-grey-050: #f0f4f8;
+  --blue-grey-100: #d9e2ec;
+  --blue-grey-200: #bcccdc;
+  --blue-grey-300: #9fb3c8;
+  --blue-grey-400: #829ab1;
+  --blue-grey-500: #627d98;
+  --blue-grey-600: #486581;
+  --blue-grey-700: #334e68;
+  --blue-grey-800: #243b53;
+  --blue-grey-900: #102a43;
+}
+
+html {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 125%;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--blue-grey-900);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--blue-grey-100);
+}
+
+main {
+  max-width: max-content;
+  margin: 3em auto 0 auto;
+  padding: 1.5em;
+  background-color: #fff;
+  border: 2px solid var(--blue-grey-200);
+  border-radius: 8px;
+}
+
+/* For the month */
+.mes {
+  color: var(--blue-grey-700);
+  text-align: center;
+  font-weight: 500;
+}
+
+/* CSS grid used for the dates */
+.dia,
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 2fr);
+}
+
+/* Styles for the weekday/weekend header */
+.dia {
+    margin-top: 1.25em;
+}
+
+.dia > * {
+    font-size: 0.7em;
+    color: var(--blue-grey-400);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+/* Dates */
+.grid {
+  margin-top: 0.5em;
+}
+
+/* Positioning the first day */
+.grid button:first-child {
+  grid-column: 7;
+}
+
+/* Style for each day */
+.grid button {
+  position: relative;
+  border: 0;
+  width: 10ch;
+  height: 7ch;
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--blue-grey-600);
+}
+
+.grid button:hover,
+.grid button:focus {
+  outline: none;
+  background-color: var(--blue-grey-050);
+  color: var(--blue-grey-700);
+}
+
+.grid button:active,
+.grid button.is-selected {
+  background-color: var(--teal-100);
+  color: var(--teal-900);
+}

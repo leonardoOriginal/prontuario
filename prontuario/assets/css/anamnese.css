@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: inline-block;
+    height: 600px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+section h2{
+    color: #028090;
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.card{
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    padding: 20px;
+    border: 2px solid #028090;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logo-img{
+    width: 20%;
+}
+
+.card:hover{
+    background-color: #02C39A;
+    color: white;
+}
+
+.card:hover .card-text h3{
+    color: white;
+}
+
+@media screen and (max-width: 1090px){
+    .card{
+        width: 100%;
+        border: 2px solid #05668D
+    }
+
+    .logo-img{
+        width: 15%;
+    }
+}

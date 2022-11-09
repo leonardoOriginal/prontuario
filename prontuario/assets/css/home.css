@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo h2{
+    margin: 25px 0px 0px 30px;
+}
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.cartao{
+    border-radius: 5px;
+    max-width: 300px;
+    padding: 20px 0 20px 0;
+    margin: 20px 30px 20px 5px;
+}
+
+.cards h2, .cards p{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+
+#card1{
+    background-color: rgb(234, 128, 146);
+    border-left: 15px solid rgb(218, 72, 72);
+}
+
+#card2{
+    background-color: rgb(128, 216, 86);
+    border-left: 15px solid rgb(28, 114, 28);
+}
+
+#card3{
+    background-color: rgb(109, 121, 224);
+    border-left: 15px solid rgb(42, 29, 158);
+}
+
+#card4{
+    background-color: rgb(221, 221, 122);
+    border-left: 15px solid rgb(212, 237, 23);
+}
+
+.botao{
+    text-align: center;
+}
+
+#btn-calendario{
+    background-color: white;
+    border: 3px solid #028090;
+    color: #028090;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40%;
+    border-radius: 100px;
+    margin-top: 10px;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+#btn-calendario a{
+    text-decoration: none;
+    color: #028090;
+}
+
+
+.imagens{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.paciente{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    margin: 20px 30px 20px 5px;
+}
+
+.img-paciente{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#btn-paciente{
+    background-color: white;
+    border: 3px solid #028090;
+    color: #028090;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40%;
+    border-radius: 100px;
+    margin-top: 10px;
+    padding: 10px 0px;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+#btn-paciente a{
+    text-decoration: none;
+    color: #028090;;
+}
+

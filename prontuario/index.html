@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Vida Leve - Escola do Bem-Estar</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="metade">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt=""
+                    style="width: 120px; height: 150px; padding-left: 44%; padding-top: 15%">
+            </div>
+            <p
+                style="font-family: 'Montserrat', sans-serif; /*weight: 300;*/ font-size: 2.3em; text-align: center; color: white">
+                VIDA LEVE</p>
+            <div class="aviso"
+                style="width: 80%; height: 9.3vh; background: rgba(255, 255, 255, 0.18); border-radius: 5px; margin-left: 4.45vw;">
+                <p
+                    style="color: white; font-family: 'Poppins', sans-serif; letter-spacing: 1px; padding-top: 1.7vh; text-align: center;">
+                    Clique aqui para saber os benefícios <a href="#"><button class="botao-ler">Ler sobre a Vida
+                            Leve</button></a></p>
+            </div>
+            <div class="termos">
+                <p href="">Termos de privacidade</p>
+            </div>
+        </div>
+        <div class="metade2">
+            <div class="login">
+                <div class="logohidden">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt=""
+                            style="width: 80px; height: 90px; padding-left: 44%; margin-top: 50px">
+                    </div>
+                    <p
+                        style="font-family: 'Montserrat', sans-serif; /*weight: 300;*/ font-size: 2.3em; text-align: center; font-weight: bold; color: #fff">
+                        VIDA LEVE</p>
+                        <p style="font-family: 'Poppins'; font-style: normal; font-weight: 800; font-size: 30px; line-height: 20px; text-align: center; color: #fff; padding-top: 10px;">Entrar</p>
+                </div>
+                <p id="txt-entrar" style="font-family: 'Poppins'; font-style: normal; font-weight: 800; font-size: 32px; line-height: 48px; text-align: center; color: #00A896; padding-top: 15%;">Entrar</p>
+                <br><br>
+                <div class="email">
+                    <form action="controller/buscalogin.php" method="post">
+                        <label for="Email" id="txt-email" class="inputs-txt">Digite seu e-mail<br></label>
+                        <input type="text" id="emaile" name="emaile"
+                        style="width: 80%; height: 60px; background: #b9e7e3; border-radius: 5px; margin-left: 9%; border: transparent;">
+                    </div>
+                    <br><br>
+                    <div class="senha">
+                        <label for="Senha" class="inputs-txt">Digite sua senha<br></label>
+                        <input type="password" id="senhae" name="senhae"
+                        style="width: 80%; height: 60px; background: #b9e7e3; border-radius: 5px; margin-left: 9%; border: transparent;">
+                    </div> <br><br><br><br>
+                    <!-- <a href="home.html"><button class="botao-entrar">Entrar</button></a> -->
+                    <input class="botao-entrar" type="submit" value="Entrar">
+                </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/errologin.js"></script>
+</body>
+
+</html>

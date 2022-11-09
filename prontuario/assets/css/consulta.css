@@ -1,0 +1,469 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: #f2f2f2;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.navbar{
+    /* background-color: blue; */
+    height: 8.8vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #00A896;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    flex-wrap: wrap;
+}
+
+nav .logo{
+    display: flex;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav .img-logo{
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    padding: 0rem 1rem;
+}
+
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: #028090;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 920px) {
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #003840;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 23px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color: #f88f06;
+    }   
+}
+
+
+
+
+
+.quadrado{
+    /* background-color: #f88f06; */
+    height: 91.2vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qua{
+    background-color: #cac8c8;
+    height: 76vh;
+    width: 92%;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    margin: 10px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+
+.datat{
+    background-color: #f2f2f2;
+    height: 12vh;
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.datatt{
+    /* background-color: yellow; */
+    height: 12vh;
+    width: 80%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.voltarq{
+    /* background-color: aqua; */
+    height: 12vh;
+    width: 10%;
+}
+
+.voltaespa{
+    /* background-color: red; */
+    height: 2.9vh;
+    width: 100%;
+}
+
+#seta {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 5px;
+    box-shadow: 2px -2px 0 1px #00A896 inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(45deg);
+    height: 3vh;
+    width: 2%;
+}
+
+
+.datasepa{
+    /* background-color: rgb(2, 77, 77); */
+    height: 12vh;
+    width: 10%;
+}
+
+
+.espa{
+    /* background-color: red; */
+    height: 1vh;
+    width: 100%;
+}
+
+
+
+.cconsulta{
+    /* background-color: aquamarine; */
+    height: 61.5vh;
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* dentro da consulta: */
+.paciente{
+    background-color: #cac8c8;
+    height: 60vh;
+    width: 32.5%;
+    border-radius: 12px;
+}
+
+.horario{
+    background-color: #cac8c8;
+    height: 60vh;
+    width: 32.5%;
+    border-radius: 12px;
+}
+
+.descricao{
+    background-color: #cac8c8;
+    height: 60vh;
+    width: 32.5%;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.espacinho{
+    /* background-color: red; */
+    height: 60vh;
+    width: 1%;
+}
+
+
+
+/* dentro de paciente: */
+.fotoq{
+    /* background-color: greenyellow; */
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto{
+    /* background-color: #c2730b; */
+    height: 24vh;
+    width: 60%;
+    /* background-image: url("/assets/images/pessoa4.jpg"); */
+}
+
+.img-paciente{
+    height: 24vh;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+}
+
+.nomeq{
+    /* background-color: rgb(5, 133, 133); */
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    height: 9vh;
+    width: 95%;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 0.9rem;
+}
+
+.descq{
+    /* background-color: #01444d; */
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    height: 13vh;
+    width: 95%;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    font-size: 1rem;
+}
+
+.seleq{
+    /* background-color: rgb(85, 138, 6); */
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sele{
+    background-color: #f2f2f2;
+    height: 8vh;
+    width: 95%;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+}
+
+.espsele{
+    /* background-color: red; */
+    height: 1.3vh;
+    width: 100%;
+}
+
+
+/* dentro de horario: */
+
+.hdisponivelq{
+    /* background-color: yellow; */
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hdisponivel{
+    background: #f2f2f2;
+    height: 48vh;
+    width: 95%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 1.4rem;
+}
+
+.selehq{
+    /* background-color: goldenrod; */
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seleh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    height: 8vh;
+    width: 95%;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 0.85rem;
+}
+
+.search-container{
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* dentro de descricao */
+.descri{
+    text-align: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    height: 58vh;
+    width: 95%;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+}
+
+.desp{
+    /* background-color: red; */
+    height: 2vh;
+    width: 100%;
+}
+
+#dqsf{
+    height: 51vh;
+    width: 95%;
+    border-radius: 12px;
+}
+
+
+
+
+
+.finalizaq{
+    /* background-color: aqua; */
+    height: 8vh;
+    width: 100%;
+}
+
+.espaf{
+    /* background-color: red; */
+    height: 3vh;
+    width: 100%;
+}
+
+.finalizaqq{
+    /* background-color: #003840; */
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fina{
+    /* background-color: yellow; */
+    height: 4.5vh;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-finaliza{
+    background-color: white;
+    border: 3px solid #028090;
+    color: #028090;
+    font-size: 1.4rem;
+    font-weight: bold;
+    height: 4.5vh;
+    width: 100%;
+    border-radius: 100px;
+    /* margin-top: 10px;
+    padding: 10px 0px; */
+    text-decoration: none;
+}
+
+#btn-finaliza a{
+    text-decoration: none;
+    color: #028090;
+}
+
+
+
+

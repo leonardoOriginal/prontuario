@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>Prontuario</title>
+</head>
+<body>
+
+
+
+    <div class="container">
+
+        <nav>
+            <div class="logo" onclick="window.location.href='home.html'">
+            <img src="assets/images/logo.png" class = "img-logo" alt="">
+            <h2>Vida Leve </h2>
+
+            </div>
+    
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+    
+            <ul>
+                <li> <a href="home.html"> Home </a> </li>
+                <li> <a href="pacientes.html"> Pacientes </a> </li>
+                <li> <a href="index.html"> Sair </a> </li>
+            </ul>
+        </nav>
+    
+        <script src="assets/js/main.js"></script>
+        
+        <a href="cadastro.html"><div id="seta"></div></a>
+        <div class="header">
+        </div>
+
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="habitos">Hábitos</label>
+                <input type="text" id="habitos" placeholder="Informe os hábitos do paciente">
+            </div>
+            <div class="form-control">
+                <label for="pressao-arterial">Pressão Arterial</label>
+                <input type="text" id="pressao-arterial" placeholder="Insira a pressão arterial do paciente">
+            </div>
+            <div class="form-control">
+                <label for="frequencia-cardiaca">Frequência Cardiaca</label>
+                <input type="text" id="frequencia-cardiaca" placeholder="Insira a frequência cardiaca do paciente">
+            </div>
+            <div class="form-control">
+                <label for="pulso">Pulso</label>
+                <input type="text" id="pulso" placeholder="Insira a pulsação do paciente">
+            </div>
+            <div class="form-control">
+                <label for="temperatura">Temperatura</label>
+                <input type="text" id="temperatura" placeholder="Insira a temperatura do paciente">
+            </div>
+            <div class="form-control">
+                <label for="frequencia-arterial">Frequência Arterial</label>
+                <input type="text" id="frequencia-arterial" placeholder="Insira a Frequência Arterial do paciente">
+            </div>
+            <div class="form-control">
+                <label for="dores">Dores</label>
+                <input type="text" id="dores" placeholder="Informe as dores do paciente">
+            </div>
+            <div class="form-control">
+                <label for="queixa-principal">Queixa Principal</label>
+                <input type="text" id="queixa-principal" placeholder="Insira a queixa principal do paciente">
+            </div>
+            <div class="form-control">
+                <label for="comorbidades">Comorbidades</label>
+                <input type="text" id="comorbidades" placeholder="Informe as comorbidades do paciente">
+            </div>
+            <div class="form-control">
+                <label for="patologia">Patologia</label>
+                <input type="text" id="patologia" placeholder="Informe a patologia do paciente">
+            </div>
+            <div class="form-control">
+                <label for="antecedentes-familiares">Antecedentes Familiares</label>
+                <input type="text" id="antecedentes-familiares" placeholder="Informe os antecedentes familiares do paciente">
+            </div>
+            <div class="form-control">
+                <label for="medicamentos-regulares">Medicamentos Regulares</label>
+                <input type="text" id="medicamentos-regulares" placeholder="Informe os medicamentos regulares do paciente">
+            </div>
+            <div class="form-control">
+                <label for="ciclo-menstrual">Ciclo Menstrual</label>
+                <input type="text" id="ciclo-menstrual" placeholder="informe o ciclo menstrual do paciente">
+            </div>
+            <div class="form-control">
+                <label for="alergias">Alergias</label>
+                <input type="text" id="alergias" placeholder="Insira as alergias do paciente">
+            </div>
+            <div class="form-control">
+                <label for="filhos">Filhos</label>
+                <input type="text" id="filhos" placeholder="Insira a quantidade de filhos do paciente">
+            </div>
+            <div class="form-control">
+                <label for="sono">Sono</label>
+                <input type="text" id="sono" placeholder="Informe sobre o sono do paciente">
+            </div>
+            <div class="form-control">
+                <label for="funcionamento-intestinal">Funcionamento Intestinal</label>
+                <input type="text" id="funcionamento-intestinal" placeholder="Informe o funcionamento intestinal do paciente">
+            </div>
+            <div class="form-control">
+                <label for="exame-geral">Exame Geral</label>
+                <input type="text" id="exame-geral" placeholder="Insira o exame geral do paciente">
+            </div>
+            <div class="form-control">
+                <label for="estado-psicologico">Estado Psicológico</label>
+                <input type="text" id="estado-psicologico" placeholder="Insira o estado psicológico do paciente">
+            </div>
+
+            
+
+        </form>
+
+        <div class="botao">
+            <button onclick="window.location.href = 'paciente.html'">Enviar</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

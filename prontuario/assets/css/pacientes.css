@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 25px;
+}
+
+.pacientes-box{
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    height: 65vh;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 1px solid black;
+}
+
+.pacientes-header{
+    border-bottom: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+
+.pacientes-card{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.pacientes-img{
+    padding: 10px;
+    width: auto;
+}
+
+
+.pacientes-img img{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.pacientes-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.pacientes-info2{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 16px;
+    text-align: center;
+    width: 50%;
+}
+
+.pacientes-btn{
+    width: 50%;
+
+}
+
+.pacientes-btn a{
+    text-decoration: none;
+    color: #028090;
+}
+
+.add-btn{
+    background-color: white;
+    border: 3px solid #028090;
+    color: #028090;
+    font-size: 16px;
+    font-weight: bold;
+    width: 250px;
+    border-radius: 100px;
+    padding: 5px 0px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#hidden{
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 675px){
+    .pacientes-btn{
+        display: none;
+    }
+
+    #hidden{
+        display: flex;
+        width: 75px;
+    }
+}
+

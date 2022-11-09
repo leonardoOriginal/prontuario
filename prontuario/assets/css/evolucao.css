@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: blueviolet;
+    height: 100vh;
+    width: 100%;
+}
+
+.voltarq{
+    /* background-color: aqua; */
+    height: 8vh;
+    width: 10%;
+}
+
+.voltaespa{
+    /* background-color: red; */
+    height: 2.9vh;
+    width: 100%;
+}
+
+#seta {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 5px;
+    box-shadow: 2px -2px 0 1px #00A896 inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(45deg);
+    height: 3vh;
+    width: 2%;
+}
+
+.quadrado{
+    background-color: aqua;
+    height: 83.2vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.grafq{
+    background-color: yellow;
+    height: 75vh;
+    width: 85%;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.grafespa{
+    background-color: red;
+    height: 1.5vh;
+    width: 100%;
+}
+
+.fotoq{
+    background-color: orangered;
+    height: 16vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto{
+    background-color: gray;
+    height: 16vh;
+    width: 18%;
+}
+
+.img-paciente{
+    height: 16vh;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.grafqq{
+    background-color: green;
+    height: 57.5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.espa{
+    background-color: red;
+    height: 57.5vh;
+    width: 4%;
+}
+
+.graf1{
+    background-color: blue;
+    height: 53vh;
+    width: 46.5%;
+}
+
+.graf2{
+    background-color: rgb(52, 52, 245);
+    height: 53vh;
+    width: 46.5%;
+}
